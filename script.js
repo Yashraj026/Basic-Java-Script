@@ -25,7 +25,13 @@ box4.addEventListener("click", () => {
 const btn = document.getElementById("btn");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  let input = document.getElementById("in").value;
   let h1 = document.getElementById("head");
-  h1.innerHTML = `Hello, ${input}`;
+  let input = document.getElementById("in").value;
+  if(input!=""){
+    h1.innerHTML = `Hello, ${input}`;
+  }
+  else{
+    h1.innerHTML = `Hello`;
+  }
 });
+
